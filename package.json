@@ -1,0 +1,22 @@
+{
+  "name": "tennis",
+  "version": "1.0.0",
+  "description": "This is the bootstrapping TDD in Javascript for BUU class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NarezTwentyFour/tennispoint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NarezTwentyFour/tennispoint/issues"
+  },
+  "homepage": "https://github.com/NarezTwentyFour/tennispoint#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.2"
+  }
+}
