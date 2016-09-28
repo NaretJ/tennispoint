@@ -98,30 +98,34 @@ function Tennis(){
         }
       }
       if(this.scoreA === 'game'){
-        this.score = 'playey A won';
+        this.score = 'player A won';
       }
       return this.score;
     };
 }
 describe('tannisgame', function() {
-  var tennis = new Tennis();
+  var tennisBwon = new Tennis();
   it('should be "Love - Love" when starting the game', function() {
-    expect(tennis.echo()).toEqual('Love - Love');
+    expect(tennisBwon.echo()).toEqual('Love - Love');
   });
   it('should be "Love - Fifteen" when playerB get points', function() {
-    tennis.playerBGetScore();
-    expect(tennis.echo()).toEqual('Love - Fifteen');
+    tennisBwon.playerBGetScore();
+    expect(tennisBwon.echo()).toEqual('Love - Fifteen');
   });
   it('should be "Love - Thirty" when playerB get points', function() {
-    tennis.playerBGetScore();
-    expect(tennis.echo()).toEqual('Love - Thirty');
+    tennisBwon.playerBGetScore();
+    expect(tennisBwon.echo()).toEqual('Love - Thirty');
   });
   it('should be "Love - Forty" when playerB get points', function() {
-    tennis.playerBGetScore();
-    expect(tennis.echo()).toEqual('Love - Forty');
+    tennisBwon.playerBGetScore();
+    expect(tennisBwon.echo()).toEqual('Love - Forty');
   });
   it('should be "player B won" when playerB get lastpoints', function() {
-    tennis.playerBGetScore();
-    expect(tennis.echo()).toEqual('player B won');
+    tennisBwon.playerBGetScore();
+    expect(tennisBwon.echo()).toEqual('player B won');
+  });
+  var tennisAwon = new Tennis();
+  it('should be "Love - Love" when starting the game', function() {
+    expect(tennisAwon.echo()).toEqual('Love - Love');
   });
 });
