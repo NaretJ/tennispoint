@@ -144,4 +144,10 @@ describe('tannisgame', function() {
     tennisAwon.playerAGetScore();
     expect(tennisAwon.echo()).toEqual('player A won');
   });
+  var tennis = new Tennis();
+  it('should be "Fifteen - Fifteen" when playerA and playerB points equal', function() {
+    tennis.playerAGetScore();
+    tennis.playerBGetScore();
+    expect(tennis.echo()).toEqual('Fifteen - Fifteen');
+  });
 });
