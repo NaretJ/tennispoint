@@ -150,4 +150,8 @@ describe('tannisgame', function() {
     tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Fifteen - Fifteen');
   });
+  it('should be "Thirty - Fifteen" when playerA thirty point and playerB fifteen points', function() {
+    tennis.playerAGetScore();
+    expect(tennis.echo()).toEqual('Thirty - Fifteen');
+  });
 });
