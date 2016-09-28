@@ -128,4 +128,8 @@ describe('tannisgame', function() {
   it('should be "Love - Love" when starting the game', function() {
     expect(tennisAwon.echo()).toEqual('Love - Love');
   });
+  it('should be "Fifteen - Love" when playerA get points', function() {
+    tennisAwon.playerAGetScore();
+    expect(tennisAwon.echo()).toEqual('Fifteen - Love');
+  });
 });
