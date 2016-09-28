@@ -79,6 +79,27 @@ function Tennis(){
           this.score = 'player B won';
         }
       }
+      if(this.scoreA === 40 ){
+        this.score += 'Forty - ';
+        if(this.scoreB === 0 ){
+          this.score += 'Love';
+        }
+        else if (this.scoreB === 15) {
+          this.score += 'Fifteen';
+        }
+        else if (this.scoreB === 30) {
+          this.score += 'Thirty';
+        }
+        else if (this.scoreB === 40) {
+          this.score += 'Forty';
+        }
+        else if (this.scoreB === 'game') {
+          this.score = 'player B won';
+        }
+      }
+      if(this.scoreA === 'game'){
+        this.score = 'playey A won';
+      }
       return this.score;
     };
 }
