@@ -40,6 +40,21 @@ function Tennis(){
           this.score += 'Forty';
         }
       }
+      if(this.scoreA === 15 ){
+        this.score += 'Fifteen - ';
+        if(this.scoreB === 0 ){
+          this.score += 'Love';
+        }
+        else if (this.scoreB === 15) {
+          this.score += 'Fifteen';
+        }
+        else if (this.scoreB === 30) {
+          this.score += 'Thirty';
+        }
+        else if (this.scoreB === 40) {
+          this.score += 'Forty';
+        }
+      }
       return this.score;
     };
 }
@@ -55,5 +70,9 @@ describe('tannisgame', function() {
   it('should be "Love - Thirty" when playerB get points', function() {
     tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Love - Thirty');
+  });
+  it('should be "Love - Forty" when playerB get points', function() {
+    tennis.playerBGetScore();
+    expect(tennis.echo()).toEqual('Love - Forty');
   });
 });
