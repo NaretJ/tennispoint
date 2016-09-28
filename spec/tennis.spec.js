@@ -44,13 +44,16 @@ function Tennis(){
     };
 }
 describe('tannisgame', function() {
+  var tennis = new Tennis();
   it('should be "Love - Love" when starting the game', function() {
-	  var tennis = new Tennis();
     expect(tennis.echo()).toEqual('Love - Love');
   });
-  it('should be "Love - fifteen" when playerB get points', function() {
-    var tennis = new Tennis();
+  it('should be "Love - Fifteen" when playerB get points', function() {
     tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Love - Fifteen');
+  });
+  it('should be "Love - Thirty" when playerB get points', function() {
+    tennis.playerBGetScore();
+    expect(tennis.echo()).toEqual('Love - Thirty');
   });
 });
