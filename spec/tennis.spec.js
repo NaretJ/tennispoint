@@ -57,6 +57,9 @@ function Tennis(){
         else if (this.scoreB === 40) {
           this.score += 'Forty';
         }
+        else if (this.scoreB === 'game') {
+          this.score = 'player B won';
+        }
       }
       return this.score;
     };
