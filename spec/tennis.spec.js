@@ -140,4 +140,8 @@ describe('tannisgame', function() {
     tennisAwon.playerAGetScore();
     expect(tennisAwon.echo()).toEqual('Forty - Love');
   });
+  it('should be "player A won" when playerA get lastpoints', function() {
+    tennisAwon.playerAGetScore();
+    expect(tennisAwon.echo()).toEqual('player A won');
+  });
 });
