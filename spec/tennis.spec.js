@@ -136,4 +136,8 @@ describe('tannisgame', function() {
     tennisAwon.playerAGetScore();
     expect(tennisAwon.echo()).toEqual('Thirty - Love');
   });
+  it('should be "Forty - Love" when playerA get points', function() {
+    tennisAwon.playerAGetScore();
+    expect(tennisAwon.echo()).toEqual('Forty - Love');
+  });
 });
