@@ -39,6 +39,9 @@ function Tennis(){
         else if (this.scoreB === 40) {
           this.score += 'Forty';
         }
+        else if (this.scoreB === 'game') {
+          this.score = 'player B won';
+        }
       }
       if(this.scoreA === 15 ){
         this.score += 'Fifteen - ';
@@ -74,5 +77,9 @@ describe('tannisgame', function() {
   it('should be "Love - Forty" when playerB get points', function() {
     tennis.playerBGetScore();
     expect(tennis.echo()).toEqual('Love - Forty');
+  });
+  it('should be "player B won" when playerB get lastpoints', function() {
+    tennis.playerBGetScore();
+    expect(tennis.echo()).toEqual('player B won');
   });
 });
